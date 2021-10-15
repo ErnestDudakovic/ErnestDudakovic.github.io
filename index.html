@@ -13,7 +13,7 @@
     <script type="text/javascript">
         (function () {
             // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('YOUR_USER_ID');
+            emailjs.init('user_oSfnWJC4mZJCB0TnSVj5H');
         })();
     </script>
     <script type="text/javascript">
@@ -23,7 +23,7 @@
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
-                emailjs.sendForm('service_6gr58n5', 'template_x40k2ku', this)
+                emailjs.sendForm('service_6gr58n5', 'template_x4ok2ku', this)
                     .then(function () {
                         console.log('SUCCESS!');
                     }, function (error) {
@@ -40,53 +40,64 @@
         Juraj Dobrila University of Pula
     </div>
     <div class="p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5"
-        style="margin-left:180px"></div>z
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-            <div class="font-sans text-xl mb-2">Contact</div>
-            <p class="font-sans text-gray-700 text-base">
-                Here you can find out more about me and my project.
-            </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-            <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a
-                    class="font-sans px-10 hover:text-gray-500 cursor-pointer"
-                    href="https://www.facebook.com/profile.php?id=100002199726570">Facebook</a></span>
-            <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a
-                    class="font-sans px-10 hover:text-gray-500 cursor-pointer"
-                    href="https://www.youtube.com/channel/UCavgSDkI8YjnhBlYIr1XBsw">Youtube</a></span>>
-        </div>
-    </div> -->
+        style="margin-left:180px">
 
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-            <div class="font-sans text-xl mb-2">Projects</div>
-            <p class="text-gray-700 text-base">
-                My most recent Projects
-            </p>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+                <div class="font-sans text-xl mb-2">Contact</div>
+                <p class="font-sans text-gray-700 text-base">
+                    Here you can find out more about me and my project.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a
+                        class="font-sans px-10 hover:text-gray-500 cursor-pointer"
+                        href="https://www.facebook.com/profile.php?id=100002199726570">Facebook</a></span>
+                <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a
+                        class="font-sans px-10 hover:text-gray-500 cursor-pointer"
+                        href="https://www.youtube.com/channel/UCavgSDkI8YjnhBlYIr1XBsw">Youtube</a></span>
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <label>Name</label><br>
+                    <input type="text" name="user_name">
+                    <label><br>Email</label><br>
+                    <input type="email" name="user_email">
+                    <label><br>Message</label><br>
+                    <textarea name="message"></textarea><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
         </div>
-        <div class="px-6 pt-4 pb-2">
-            <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a
-                    class="font-sans px-10 hover:text-gray-500 cursor-pointer"
-                    href="https://ernestdudakovic.wordpress.com/">Wordpress</a></span></span>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+                <div class="font-sans text-xl mb-2">Projects</div>
+                <p class="text-gray-700 text-base">
+                    My most recent Projects
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><a
+                        class="font-sans px-10 hover:text-gray-500 cursor-pointer"
+                        href="https://ernestdudakovic.wordpress.com/">Wordpress</a></span></span>
+            </div>
         </div>
-    </div>
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full rounded-full " src="img/jaj.png">
-        <div class="px-6 py-4">
-            <div class="font-sans text-xl mb-2">About me</div>
-            <p class="font-sans text-gray-700 text-base">
-                Ernest is a student at Faculty of Informatics
-                Juraj Dobrila University of Pula. He has basic knowledge of C++,
-                Python, HTML, CSS and Javascript. He is currently studying as a 2nd year student
-                hoping to finish all 5 five years of college and acquire a master's degree in
-                informatics.
-            </p>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+            <img class="w-full rounded-full " src="img/jaj.png">
+            <div class="px-6 py-4">
+                <div class="font-sans text-xl mb-2">About me</div>
+                <p class="font-sans text-gray-700 text-base">
+                    Ernest is a student at Faculty of Informatics
+                    Juraj Dobrila University of Pula. He has basic knowledge of C++,
+                    Python, HTML, CSS and Javascript. He is currently studying as a 2nd year student
+                    hoping to finish all 5 five years of college and acquire a master's degree in
+                    informatics.
+                </p>
+            </div>
         </div>
-    </div>
 
     </div>
 
